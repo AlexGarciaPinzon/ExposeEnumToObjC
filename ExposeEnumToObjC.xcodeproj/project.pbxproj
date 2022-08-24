@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C65DCA2C28B545A0003AA14A /* UsingSwiftEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65DCA2B28B545A0003AA14A /* UsingSwiftEnum.swift */; };
 		C6F42D0728AEBE000019899A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F42D0628AEBE000019899A /* AppDelegate.m */; };
 		C6F42D0A28AEBE000019899A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F42D0928AEBE000019899A /* SceneDelegate.m */; };
 		C6F42D0D28AEBE000019899A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F42D0C28AEBE000019899A /* ViewController.m */; };
@@ -14,9 +15,11 @@
 		C6F42D1228AEBE0C0019899A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F42D1128AEBE0C0019899A /* Assets.xcassets */; };
 		C6F42D1528AEBE0C0019899A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F42D1328AEBE0C0019899A /* LaunchScreen.storyboard */; };
 		C6F42D1828AEBE0C0019899A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F42D1728AEBE0C0019899A /* main.m */; };
+		C6F42D2228AECA9D0019899A /* SwiftFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F42D2128AECA9D0019899A /* SwiftFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C65DCA2B28B545A0003AA14A /* UsingSwiftEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingSwiftEnum.swift; sourceTree = "<group>"; };
 		C6F42D0228AEBE000019899A /* ExposeEnumToObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExposeEnumToObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F42D0528AEBE000019899A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C6F42D0628AEBE000019899A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,8 @@
 		C6F42D1428AEBE0C0019899A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6F42D1628AEBE0C0019899A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6F42D1728AEBE0C0019899A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6F42D2028AECA9D0019899A /* ExposeEnumToObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExposeEnumToObjC-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6F42D2128AECA9D0019899A /* SwiftFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +66,12 @@
 		C6F42D0428AEBE000019899A /* ExposeEnumToObjC */ = {
 			isa = PBXGroup;
 			children = (
+				C6F42D1F28AEC6C40019899A /* SwiftFiles */,
+				C6F42D1E28AEC6A80019899A /* ViewControllers */,
 				C6F42D0528AEBE000019899A /* AppDelegate.h */,
 				C6F42D0628AEBE000019899A /* AppDelegate.m */,
 				C6F42D0828AEBE000019899A /* SceneDelegate.h */,
 				C6F42D0928AEBE000019899A /* SceneDelegate.m */,
-				C6F42D0B28AEBE000019899A /* ViewController.h */,
-				C6F42D0C28AEBE000019899A /* ViewController.m */,
 				C6F42D0E28AEBE000019899A /* Main.storyboard */,
 				C6F42D1128AEBE0C0019899A /* Assets.xcassets */,
 				C6F42D1328AEBE0C0019899A /* LaunchScreen.storyboard */,
@@ -74,6 +79,25 @@
 				C6F42D1728AEBE0C0019899A /* main.m */,
 			);
 			path = ExposeEnumToObjC;
+			sourceTree = "<group>";
+		};
+		C6F42D1E28AEC6A80019899A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6F42D0C28AEBE000019899A /* ViewController.m */,
+				C6F42D0B28AEBE000019899A /* ViewController.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C6F42D1F28AEC6C40019899A /* SwiftFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C6F42D2128AECA9D0019899A /* SwiftFile.swift */,
+				C6F42D2028AECA9D0019899A /* ExposeEnumToObjC-Bridging-Header.h */,
+				C65DCA2B28B545A0003AA14A /* UsingSwiftEnum.swift */,
+			);
+			path = SwiftFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +131,7 @@
 				TargetAttributes = {
 					C6F42D0128AEBE000019899A = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -146,6 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F42D2228AECA9D0019899A /* SwiftFile.swift in Sources */,
+				C65DCA2C28B545A0003AA14A /* UsingSwiftEnum.swift in Sources */,
 				C6F42D0D28AEBE000019899A /* ViewController.m in Sources */,
 				C6F42D0728AEBE000019899A /* AppDelegate.m in Sources */,
 				C6F42D1828AEBE0C0019899A /* main.m in Sources */,
@@ -290,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 74P5S6ZRBM;
@@ -308,6 +336,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = alex.ExposeEnumToObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ExposeEnumToObjC/SwiftFiles/ExposeEnumToObjC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -317,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 74P5S6ZRBM;
@@ -335,6 +367,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = alex.ExposeEnumToObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ExposeEnumToObjC/SwiftFiles/ExposeEnumToObjC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
