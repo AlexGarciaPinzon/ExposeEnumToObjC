@@ -6,10 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ExposeEnumToObjC-Swift.h"
 
 @interface ViewController : UIViewController
-
 
 @end
 

@@ -17,15 +17,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
      
-    //socialPlatform socialplat = socialPlatformInstagram;
+    socialPlatform socialplat = socialPlatformInstagram;
     self.sf = [SwiftFile shared];
-    [self.sf trackSocialWithPlatform:socialPlatformTwitter];
+    [self.sf trackSocialWithPlatform:socialPlatformInstagram];
    
     NSLog(@"Something To Print");
 }
 @end
-
-//[socialplat nameOptionEnumValue]
-
-//self.uSe = [UsingSwiftEnum shared];
-//[self.uSe trackSocialWithPlatforma:socialPlatformFacebook];
